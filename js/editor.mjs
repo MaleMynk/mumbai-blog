@@ -40,7 +40,7 @@ const uploadImage = (uploadFile, uploadType) => {
         formdata.append('image', file);
 
       //  fetch('https://mumbai-blog.onrender.com/upload', {
-        fetch ('/upload',{
+        fetch ('/uploads',{
             method: 'post',
             body: formdata
         })
