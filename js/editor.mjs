@@ -44,7 +44,7 @@ const uploadImage = (uploadFile, uploadType) => {
             method: 'post',
             body: formdata
         })
-        .then(res => res.json())
+        .then(response => response.json())
         .then(data => {
             if (uploadType === "image") {
                 addImage(data, file.name);
